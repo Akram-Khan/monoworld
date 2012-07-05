@@ -1,2 +1,12 @@
-.row
-	%h5 header
+.nav
+	.row
+		.two.columns
+			=image_tag "monoworld.png"
+		.six.columns
+		.four.columns
+			.five.columns
+			.two.columns.signup
+				%strong=link_to "SIGNUP", "#", :class => "white round-corner button"
+			.two.columns.login
+				%strong=link_to "LOGIN", "#", :class => "custom-cobalt-corner round-corner button"
+		

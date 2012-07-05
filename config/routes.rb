@@ -4,6 +4,10 @@ Monoworld::Application.routes.draw do
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
+  match "/about", :to => "home#about"
+  match "/terms_and_condition", :to => "home#terms_and_condition"
+  match "/learn_more", :to => "home#learn_more"
+  match "/support", :to => "home#support"
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

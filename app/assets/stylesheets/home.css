@@ -1,0 +1,52 @@
+html, body {    
+   height: 100%; 
+}
+
+.container{
+	margin-top: 20px;
+}
+
+.nav{
+	background-color: #6E6E6E;
+}
+
+.signup,.login{
+	margin-top: 10px;
+}
+
+.signup{
+	margin-left: 1%;
+}
+
+.nav img{
+	display: block;
+}
+
+.custom-cobalt-blue.button {
+	background-color: #b0c5ff;
+}
+
+.login a {
+	color: black;
+}
+
+.white.button{
+	color: black;
+}
+
+
+#all_content{
+  min-height: 93%;
+}
+
+
+.round-corner{
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+   border-radius: 2px;
+}
+
+.footer{
+  background-color: black;
+  position: relative;
+}
