@@ -8,6 +8,7 @@ Monoworld::Application.routes.draw do
   match "/terms_and_condition", :to => "home#terms_and_condition"
   match "/learn_more", :to => "home#learn_more"
   match "/support", :to => "home#support"
+  match "/privacy", :to => "home#privacy"
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

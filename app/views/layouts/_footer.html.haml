@@ -1,11 +1,11 @@
 .footer
 	.row
-		.two.columns
-		.ten.columns.links-footer
+		.three.columns
+		.nine.columns
 			%ul(class="block-grid")
-				%li=link_to "Home |", "#", :class => "nice foot"
-				%li=link_to "About |", "#", :class => "nice foot"
-				%li=link_to "Support |", "#", :class => "nice foot"
-				%li=link_to "Terms & Conditions |", "#", :class => "nice foot"
-				%li=link_to "Privacy Policy |","#", :class => "nice foot"
+				%li=link_to "Home |", root_url, :class => "foot"
+				%li=link_to "About |", about_path, :class => "foot"
+				%li=link_to "Support |", support_path, :class => "foot"
+				%li=link_to "Terms & Conditions |", terms_and_condition_path, :class => "foot"
+				%li=link_to "Privacy Policy", privacy_path, :class => "foot"
 				//%li(class ="nice foot") &copy;2012 homeroom.com All Rights Reserved
