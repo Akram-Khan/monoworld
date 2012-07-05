@@ -36,7 +36,7 @@ html, body {
 
 
 #all_content{
-  min-height: 93%;
+  min-height: 98%;
 }
 
 
@@ -47,6 +47,18 @@ html, body {
 }
 
 .footer{
-  background-color: black;
+  padding-top: 5px;
+  background-color: #6E6E6E;
   position: relative;
 }
+
+.foot{
+  padding: 2px;
+  color: black;
+  font-size: 120%;
+  font-style: bold;
+}
+
+.foot:hover{
+	color: white;	
+};
