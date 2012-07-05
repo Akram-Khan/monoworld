@@ -30,6 +30,10 @@ html, body {
 	color: black;
 }
 
+.login {
+	text-align: right;
+}
+
 .white.button{
 	color: black;
 }
@@ -63,12 +67,20 @@ html, body {
 	color: black;	
 }
 
-ul.frame img{
+.frame img{
 	padding: 15px;
-	border: 1px solid #F2F2F2;
+	border: 1px solid red;
 	-moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;
 }
 
+.red{
+	height: 50px;
+	background-color: red;
+}
 
+.blue{
+	height: 50px;
+	background-color: blue;
+}
