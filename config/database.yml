@@ -21,9 +21,7 @@ test:
   password: workatror83
 
 production:
-  adapter: mysql2
+  adapter: pg
   database: monoworld_production
   pool: 5
   timeout: 5000
-  password: workatror83
-
