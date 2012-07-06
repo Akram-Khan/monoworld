@@ -60,18 +60,17 @@ html, body {
   padding-top: 5px;
   position: relative;
   background-color: #232323;
-  background-color: ;
 }
 
 .foot{
   padding: 2px;
-  color: black;
+  color: #FAFAFA;
   font-size: 120%;
   font-style: bold;
 }
 
 .foot:hover{
-	color: black;	
+	color: #F2F2F2;	
 }
 
 /*.frame img{
