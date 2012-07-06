@@ -81,6 +81,35 @@ html, body {
 	color: #F2F2F2;	
 }
 
+.frame img{
+  	-moz-box-shadow:    3px 3px 5px 3px #ccc;
+  	-webkit-box-shadow: 3px 3px 5px 3px #ccc;
+  	box-shadow:         3px 3px 5px 3px #ccc;
+
+  	/*-moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;*/
+
+   
+
+   /*-webkit-transition: all .2s ease-in-out; */
+}
+
+.featured img{
+
+	-moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;
+	
+}
+
+
+/*.frame img:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}*/
+
+
 /*.frame img{
 	padding: 15px;
 	border: 1px solid #F2F2F2;
