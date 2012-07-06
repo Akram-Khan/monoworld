@@ -1,5 +1,10 @@
 Monoworld::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => {:sessions => "sessions", :registrations => "registrations"} do
+    get "signup", :to => "registrations#new"
+    get "login", :to => "sessions#new"
+    post "login", :to => "sessions#new"
+    get "logout", :to => "devise/sessions#destroy"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

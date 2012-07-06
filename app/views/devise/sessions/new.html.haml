@@ -1,0 +1,19 @@
+.content
+	.section
+		.row
+			.twelve.columns
+				%h5 
+					%strong LOGIN
+				%hr
+		.row
+			.five.columns.give-right-border
+				.row
+					.twelve.columns
+						=form_for(resource, :as => resource_name, :url => session_path(resource_name), :validate => true) do |f|
+							%ul
+								%li=f.text_field :email, :placeholder => "Email", :class => "custom-textarea"
+								%li=f.password_field :password, :placeholder => "Password", :class => "custom-textarea"
+								%li=f.submit :class => "small black button", :value => "Login"
+						%ul
+							//%li= link_to image_tag("facebook_login_button.png"),user_omniauth_authorize_path(:facebook)
+							%li= render :partial => "devise/shared/links"
