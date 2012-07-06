@@ -8,8 +8,16 @@ html, body {
 
 }
 
+.row{
+	max-width: 1080px;
+}
+
 .container{
 	margin-top: 20px;
+}
+
+.image-margin-top{
+	margin-top: 15px;
 }
 
 .nav{
