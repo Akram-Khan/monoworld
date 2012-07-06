@@ -23,15 +23,15 @@ html, body {
 .nav{
 	background-color: #232323;
 
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#232323), to(#A4A4A4));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1C1C1C), to(#6E6E6E));
    /* Safari 5.1+, Mobile Safari, Chrome 10+ */
-  background-image: -webkit-linear-gradient(top, #232323, #A4A4A4); 
+  background-image: -webkit-linear-gradient(top, #1C1C1C, #6E6E6E); 
    /* Firefox 3.6+ */
-  background-image: -moz-linear-gradient(top, #232323, #A4A4A4);
+  background-image: -moz-linear-gradient(top, #1C1C1C, #6E6E6E);
    /* IE 10+ */
-  background-image: -ms-linear-gradient(top, #232323, #A4A4A4);
+  background-image: -ms-linear-gradient(top, #1C1C1C, #6E6E6E);
    /* Opera 11.10+ */
-  background-image: -o-linear-gradient(top, #232323, #A4A4A4);
+  background-image: -o-linear-gradient(top, #1C1C1C, #6E6E6E);
 }
 
 .signup,.login{
@@ -53,7 +53,7 @@ html, body {
 }
 
 .login a,.signup a {
-	color:#C0C0C0;
+	color:#F6F6F6;
 }
 
 .login a:hover,.signup a:hover {
