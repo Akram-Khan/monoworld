@@ -10,6 +10,17 @@
 
 <div id = "all_content">
 	<%=render "layouts/header"%>
+
+	<%flash.each do |key,value|%>
+    <div class="content">
+    	<div class="section">
+		    <div class="row">
+		      <div class="flash <%=key%> alert-box eight columns"><%=value%></div>
+		    </div>
+	    </div>
+    </div>
+	<%end%>
+	
 	<%= yield %>
 </div>
 
