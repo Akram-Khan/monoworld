@@ -36,6 +36,8 @@ html, body {
 
 .signup,.login{
 	margin-top: 10px;
+	font-size: 150%;
+	color: #C0C0C0;
 }
 
 .signup{
@@ -50,17 +52,21 @@ html, body {
 	background-color: #b0c5ff;
 }
 
-.login a {
-	color: black;
+.login a,.signup a {
+	color:#C0C0C0;
+}
+
+.login a:hover,.signup a:hover {
+	color:black;
 }
 
 .login {
 	text-align: right;
 }
 
-.white.button{
+/*.white.button{
 	color: black;
-}
+}*/
 
 
 #all_content{
