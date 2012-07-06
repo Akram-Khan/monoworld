@@ -1,12 +1,24 @@
 .nav
 	.row
-		.two.columns
-			=link_to logo, root_url
-		.six.columns
-		.four.columns
+		-if current_user.blank?
+			.two.columns
+				=link_to logo, root_url
 			.six.columns
-			.three.columns.signup
-				%strong=link_to "SIGNUP", signup_path
-			.three.columns.login
-				%strong=link_to "LOGIN", login_path
-		
+			.four.columns
+				.six.columns
+				.three.columns.signup
+					%strong=link_to "SIGNUP", signup_path
+				.three.columns.login
+					%strong=link_to "LOGIN", login_path
+		-else
+			.two.columns
+				=link_to logo, "#"
+			.six.columns
+			.four.columns
+				.six.columns
+				.six.columns.logout-popup
+					%strong=link_to "#{current_user.firstname.capitalize} #{current_user.lastname.capitalize}▼", "#"
+					.row
+						.logout-popup-content
+							.row
+								=link_to "Log Out",	logout_path

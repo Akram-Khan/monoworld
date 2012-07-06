@@ -159,3 +159,34 @@ html, body {
 .content{
   margin-top :15px;
 }
+
+/*logout popup and logout popup content*/
+
+.logout-popup{
+  text-align: right;
+}
+
+.logout-popup a{
+  color: #F6F6F6;  
+}
+
+div.logout-popup .logout-popup-content{
+    min-height: 100px;
+    min-width: 90px;
+    position: absolute;
+    margin-top: 5px;
+    right: 10px;
+    visibility: hidden;
+    padding: 5px;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+    z-index: 99;
+
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px;
+
+}
+
+.logout-popup .logout-popup-content a:hover{
+}
