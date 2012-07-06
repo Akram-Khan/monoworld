@@ -3,6 +3,8 @@
 
 html, body {    
    height: 100%; 
+   background-color: #EFEFEF;
+   color: #C0C0C0;
 
 }
 
@@ -11,7 +13,7 @@ html, body {
 }
 
 .nav{
-	background-color: #6E6E6E;
+	background-color: #232323;
 }
 
 .signup,.login{
@@ -57,7 +59,7 @@ html, body {
 .footer{
   padding-top: 5px;
   position: relative;
-  background-color: #6E6E6E;
+  background-color: #232323;
   background-color: ;
 }
 
@@ -72,20 +74,10 @@ html, body {
 	color: black;	
 }
 
-.frame img{
+/*.frame img{
 	padding: 15px;
 	border: 1px solid #F2F2F2;
 	-moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;
-}
-
-.red{
-	height: 50px;
-	background-color: red;
-}
-
-.blue{
-	height: 50px;
-	background-color: blue;
-}
+}*/
