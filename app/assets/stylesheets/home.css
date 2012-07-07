@@ -32,7 +32,7 @@ html, body {
 }
 
 .signup,.login{
-	margin-top: 10px;
+	margin-top: 20px;
 	font-size: 150%;
 	color: #C0C0C0;
 }
@@ -45,6 +45,7 @@ html, body {
 	height: 80px;
 }
 .nav img{
+  margin-top: 10px;
 	display: block;
 }
 
