@@ -14,6 +14,7 @@ gem 'haml'
 gem 'devise'
 gem "omniauth-facebook"
 gem 'omniauth-openid'
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -34,9 +35,6 @@ group :production do
   gem "pg"
 end
 
-group :development do
-	gem "thin"
-end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
