@@ -18,12 +18,10 @@
 						%li= render :partial => "devise/shared/links"
 			.five.columns
 				.row
-					.container
+					.seven.columns.social-media
 						.row
-							.seven.columns.social-media
-								.row
-									=link_to image_tag("facebook_login.png"), user_omniauth_authorize_path(:facebook)
-								.row
-									=link_to image_tag("googleconnect.png"), user_omniauth_authorize_path(:google)
-							.two.columns
+							=link_to image_tag("facebook_login.png"), user_omniauth_authorize_path(:facebook)
+						.row
+							=link_to image_tag("googleconnect.png"), user_omniauth_authorize_path(:google)
+					.two.columns
 .container
