@@ -13,6 +13,7 @@ gem 'zurb-foundation', "2.2.0.2"
 gem 'haml'
 gem 'devise'
 gem "omniauth-facebook"
+gem 'omniauth-openid'
 
 
 # Gems used only for assets and not required
@@ -31,6 +32,10 @@ gem 'jquery-rails'
 
 group :production do
   gem "pg"
+end
+
+group :development do
+	gem "thin"
 end
 
 # To use ActiveModel has_secure_password

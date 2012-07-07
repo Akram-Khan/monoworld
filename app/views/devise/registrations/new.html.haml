@@ -40,6 +40,8 @@
 					.container
 						.row
 							.seven.columns.social-media
-								=link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
-								//=image_tag "social-media.png"
+								.row
+									=link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+								.row
+									=link_to "Sign in with google", user_omniauth_authorize_path(:google)
 							.two.columns

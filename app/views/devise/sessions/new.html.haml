@@ -14,14 +14,16 @@
 								%li=f.text_field :email, :placeholder => "Email", :class => "custom-textarea"
 								%li=f.password_field :password, :placeholder => "Password", :class => "custom-textarea"
 								%li=f.submit :class => "small black button", :value => "Login"
-						%ul
-							//%li= link_to image_tag("facebook_login_button.png"),user_omniauth_authorize_path(:facebook)
-							%li= render :partial => "devise/shared/links"
+					%ul
+						%li= render :partial => "devise/shared/links"
 			.five.columns
 				.row
 					.container
 						.row
 							.seven.columns.social-media
-								//=image_tag "social-media.png"
+								.row
+									=link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+								.row
+									=link_to "Sign in with google", user_omniauth_authorize_path(:google)
 							.two.columns
 .container
