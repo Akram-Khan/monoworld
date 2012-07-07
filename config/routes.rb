@@ -1,5 +1,5 @@
 Monoworld::Application.routes.draw do
-  devise_for :users, :controllers => {:sessions => "sessions", :registrations => "registrations"} do
+  devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks",:sessions => "sessions", :registrations => "registrations"} do
     get "signup", :to => "registrations#new"
     get "login", :to => "sessions#new"
     post "login", :to => "sessions#new"
