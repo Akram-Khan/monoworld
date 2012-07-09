@@ -5,7 +5,10 @@ class CreatePhotos < ActiveRecord::Migration
       t.string :description
       t.string :picture
 
+      t.references :theme
+
       t.timestamps
     end
+    add_index :photos, :user_id 
   end
 end
