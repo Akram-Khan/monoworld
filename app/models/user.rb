@@ -12,10 +12,13 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :firstname, :lastname, :provider, :uid
   # attr_accessible :title, :body
 
+  has_many :themes, :dependent => :destroy
+  has_many :photos, :through => :theme
+
   firstname_regex = /^(([a-z]_)|[a-z])([a-z])*$/i
   lastname_regex = /^(([a-z]_)|[a-z])([a-z]+\s?)*$/i
 
-   validates :firstname,:presence   => true, 
+  validates :firstname,:presence   => true, 
                         :length     => { :within => 1..50},
                         :format     => {:with => firstname_regex, :message => "Only English language letters allowed" }
 

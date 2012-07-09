@@ -1,8 +1,12 @@
 .row
 	.twelve.columns
+		%h3 Create a new theme
 		=form_for @theme do |f|
 			.row
-				=f.label :name, "Name of the theme"
+				%strong=f.label :name, "What is the name of your theme?"
 				=f.text_field :name, :class => "custom-textarea"
+			.row
+				%strong=f.label :description, "What is your theme all about?"
+				=f.text_area :description, :class => "custom-textarea-custom-width"
 			.row
 				=f.submit :value => "Create Theme", :class => "white button" 

@@ -1,0 +1,8 @@
+.container
+	.row
+		.four.columns
+		.six.columns
+			=image_tag(@photo.picture.thumb_large.url)
+			=@photo.name
+			=@photo.theme.name
+		.two.columns

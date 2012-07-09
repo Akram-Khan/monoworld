@@ -9,15 +9,16 @@ class PhotosController < ApplicationController
 	def create
 		@photo = @theme.photos.build(params[:photo])
 		if @photo.save
-			flash[:sucess] = "Sucessfully uploaded photo"
+			flash[:notice] = "Sucessfully uploaded photo"
 			redirect_to theme_path(@theme)
 		else
-			flash[:error] = "Could not upload photo"
+			flash[:notice] = "Could not upload photo"
 			render :new
 		end
 	end
 
 	def show
+		@photo = Photo.find(params[:id])
 	end
 
 	def destroy

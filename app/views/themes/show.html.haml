@@ -1,5 +1,16 @@
-.row
-	.twelve.columns
-		=@theme.name
-	.twelve.columns
-		=link_to "upload a photo", new_theme_photo_path(@theme)
+.container
+	.row
+		.twelve.columns
+			%h3=@theme.name.capitalize
+
+.contianer
+	.row
+		.twelve.columns
+			=link_to "upload a photo", new_theme_photo_path(@theme), :class => "small white button"
+
+.container
+	.row
+		.twelve.columns
+			-@theme.photos.each do |photo|
+				=image_tag(photo.picture.thumb_medium.url)
+				=link_to photo.name, theme_photo_path(@theme)

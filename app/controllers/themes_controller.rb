@@ -8,10 +8,10 @@ class ThemesController < ApplicationController
 	def create
 		@theme = Theme.new(params[:theme])
 		if @theme.save
-			flash[:sucssess] = "Theme was created sucessfully"
+			flash[:notice] = "Theme was created sucessfully"
 			redirect_to theme_path(@theme)
 		else
-			flash[:error] = "There was an error while creating the theme"
+			flash[:notice] = "There was an error while creating the theme"
 			render :new
 		end
 	end

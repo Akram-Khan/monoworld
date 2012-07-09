@@ -17,12 +17,14 @@ ActiveRecord::Schema.define(:version => 20120709072333) do
     t.string   "name"
     t.string   "description"
     t.integer  "theme_id"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "picture"
   end
 
   add_index "photos", ["theme_id"], :name => "index_photos_on_theme_id"
+  add_index "photos", ["user_id"], :name => "index_photos_on_user_id"
 
   create_table "themes", :force => true do |t|
     t.string   "name"
