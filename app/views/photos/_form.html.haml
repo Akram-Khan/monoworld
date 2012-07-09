@@ -1,0 +1,11 @@
+.row
+	.twelve.columns
+		=form_for [@theme,@photo] do |f|
+			.row
+				=f.label :name, "Name of the picture"
+				=f.text_field :name, :class => "custom-textarea"
+			.row
+				=f.label :picture, "Upload your picture"
+				=f.file_field :picture
+			.row
+				=f.submit :value => "Upload Picture", :class => "white round button"
