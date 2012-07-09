@@ -10,7 +10,9 @@
 
 .container
 	.row
-		.twelve.columns
+		.four.columns
+		.six.columns
 			-@theme.photos.each do |photo|
 				=image_tag(photo.picture.thumb_medium.url)
 				=link_to photo.name, [@theme,photo]
+		.two.columns

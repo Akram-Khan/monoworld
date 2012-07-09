@@ -1,6 +1,6 @@
 .nav
-	.row
-		-if current_user.blank?
+	-if current_user.blank?
+		.row
 			.two.columns
 				=link_to logo, root_url
 			.six.columns
@@ -10,13 +10,18 @@
 					%strong=link_to "SIGNUP", signup_path
 				.three.columns.login
 					%strong=link_to "LOGIN", login_path
-		-else
+	-else
+		.row
 			.two.columns
 				=link_to logo, root_url
-			.six.columns
-			.four.columns
+			.three.columns.user-header-option
+				=link_to "Create a theme", new_theme_path, :class => "medium blue button"
+			.four.columns.user-header-option
+				=link_to "Photo |", "#"
+				=link_to "Wall |", "#"
+				=link_to "Discover", "#"
+			.three.columns
 				.six.columns
-					=link_to "Create a theme", new_theme_path
 				.six.columns.logout-popup
 					%strong=link_to "#{current_user.firstname.capitalize} #{current_user.lastname.capitalize}▼", "#"
 					.row

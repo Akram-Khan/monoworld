@@ -165,6 +165,7 @@ html, body {
 
 .logout-popup{
   text-align: right;
+  margin-top: 20px;
 }
 
 .logout-popup a{
@@ -192,3 +193,13 @@ div.logout-popup .logout-popup-content{
 .logout-popup .logout-popup-content a:hover{
 }
 
+.user-header-option{
+  font-size: 150%;
+  margin-top: 20px;
+}
+
+.user-header-option a {
+  color:  #FAFAFA;
+}
+
+.user-header-option
