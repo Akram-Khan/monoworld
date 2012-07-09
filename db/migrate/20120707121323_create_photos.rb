@@ -3,12 +3,12 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
       t.string :name
       t.string :description
-      t.string :picture
+      #t.string :picture
 
       t.references :theme
 
       t.timestamps
     end
-    add_index :photos, :user_id 
+    add_index :photos, :theme_id 
   end
 end
