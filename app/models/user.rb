@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :themes, :dependent => :destroy
-  has_many :photos, :through => :theme
+  has_many :photos, :through => :themes
 
   firstname_regex = /^(([a-z]_)|[a-z])([a-z])*$/i
   lastname_regex = /^(([a-z]_)|[a-z])([a-z]+\s?)*$/i

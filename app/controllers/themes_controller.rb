@@ -6,7 +6,7 @@ class ThemesController < ApplicationController
 	end
 
 	def create
-		@theme = Theme.new(params[:theme])
+		@theme = Theme.new(params[:theme].merge!(:user => current_user))
 		if @theme.save
 			flash[:notice] = "Theme was created sucessfully"
 			redirect_to theme_path(@theme)

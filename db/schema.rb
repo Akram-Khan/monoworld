@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(:version => 20120709072333) do
   create_table "photos", :force => true do |t|
     t.string   "name"
     t.string   "description"
-    t.integer  "theme_id"
     t.integer  "user_id"
+    t.integer  "theme_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "picture"
@@ -29,9 +29,12 @@ ActiveRecord::Schema.define(:version => 20120709072333) do
   create_table "themes", :force => true do |t|
     t.string   "name"
     t.string   "description"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  add_index "themes", ["user_id"], :name => "index_themes_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

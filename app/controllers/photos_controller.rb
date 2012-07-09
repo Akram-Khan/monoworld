@@ -7,7 +7,7 @@ class PhotosController < ApplicationController
 	end
 
 	def create
-		@photo = @theme.photos.build(params[:photo])
+		@photo = @theme.photos.build(params[:photo].merge!(:user => current_user))
 		if @photo.save
 			flash[:notice] = "Sucessfully uploaded photo"
 			redirect_to theme_path(@theme)

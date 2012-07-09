@@ -1,6 +1,6 @@
 class Theme < ActiveRecord::Base
 
-  attr_accessible :name, :description
+  attr_accessible :name, :description, :user
 
   has_many :photos, :dependent => :destroy
   belongs_to :user
