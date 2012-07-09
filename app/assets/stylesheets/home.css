@@ -69,7 +69,6 @@ html, body {
 	color: black;
 }*/
 
-
 #all_content{
   min-height: 92%;
 }
@@ -202,4 +201,10 @@ div.logout-popup .logout-popup-content{
   color:  #FAFAFA;
 }
 
-.user-header-option
+.user-header-option a:hover {
+  border-bottom: 4px solid #2E9AFE;
+}
+
+.selected {
+  color: #00BFFF;
+}
