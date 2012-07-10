@@ -96,7 +96,8 @@ html, body {
 .foot:hover{
 	color: #F2F2F2;	
 }
-/*.frame img{
+
+.border-shadow img{
   	-moz-box-shadow:    3px 3px 5px 3px #ccc;
   	-webkit-box-shadow: 3px 3px 5px 3px #ccc;
   	box-shadow:         3px 3px 5px 3px #ccc;
@@ -106,7 +107,6 @@ html, body {
     border-radius: 3px;
    -webkit-transition: all .2s ease-in-out; 
 }
-*/
 
 .featured img{
 
