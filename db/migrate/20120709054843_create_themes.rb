@@ -2,7 +2,7 @@ class CreateThemes < ActiveRecord::Migration
   def change
     create_table :themes do |t|
       t.string :name
-      t.string :description
+      t.text :description
       t.integer :user_id
 
       t.references :user

@@ -47,6 +47,10 @@ class PictureUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [246,246]
   end
 
+  version :thumb_extra_large do
+    process :resize_to_fill => [704,704]
+  end
+
   # Create different versions of your uploaded files:
   # version :thumb do
   #   process :scale => [50, 50]
