@@ -20,6 +20,10 @@ Monoworld::Application.routes.draw do
   resources :themes do
     resources :photos
   end
+
+  resources :photos do
+      resource :comments
+  end
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
