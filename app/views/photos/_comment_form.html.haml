@@ -1,5 +1,4 @@
 .row
 	=form_for [@photo.theme,@photo,@photo.comments.build] do |f|
-		=f.hidden_field :user_id, :value => current_user.id
 		=f.text_field :comment, :placeholder => "Write a comment ...", :class => "custom-textarea-custom-width"
 		=f.submit :value => "Comment", :class => "small black button"

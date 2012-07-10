@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 	before_filter :find_photo
 
 	def create
-		@comment = @photo.comments.build(params[:comment])
+		@comment = @photo.comments.build(params[:comment].merge!(:user => current_user))
 		if @comment.save
 			redirect_to [@photo.theme,@photo]
 		else
