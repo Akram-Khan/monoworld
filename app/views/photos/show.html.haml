@@ -1,10 +1,11 @@
 .container
 	.row
 		.four.columns
-		.eight.columns
+		.eight.columns.frame
+			%h3 
+				="#{@photo.name.capitalize} from the collection"
+				=link_to "#{@photo.theme.name}", theme_path(@photo.theme) 
 			=image_tag(@photo.picture.thumb_extra_large.url)
-			=@photo.name
-			=@photo.theme.name
 			=@photo.user.firstname
 	.row
 		.four.columns

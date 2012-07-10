@@ -1,7 +1,8 @@
-.row
+.row.comment-show
 	-if @photo.comments.exists?
 		-@photo.comments.each do |comment|
 			.row
 				=comment.comment
-				=comment.user.firstname
+				//=comment.user.firstname
 				//=comment.user_id
+.container

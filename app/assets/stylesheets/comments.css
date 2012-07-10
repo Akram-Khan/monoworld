@@ -1,0 +1,16 @@
+.comment-show{
+	padding: 5px;
+    background-color: #FAFAFA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+}
+
+.light{
+	background-color: #F2F2F2;
+}
+
+.dark{
+	background-color: #BDBDBD;
+}

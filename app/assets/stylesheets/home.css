@@ -97,7 +97,7 @@ html, body {
 	color: #F2F2F2;	
 }
 
-.frame img{
+/*.frame img{
   	-moz-box-shadow:    3px 3px 5px 3px #ccc;
   	-webkit-box-shadow: 3px 3px 5px 3px #ccc;
   	box-shadow:         3px 3px 5px 3px #ccc;
@@ -105,12 +105,9 @@ html, body {
   	-moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;
-
-   
-
-   /*-webkit-transition: all .2s ease-in-out; */
+   -webkit-transition: all .2s ease-in-out; 
 }
-
+*/
 .featured img{
 
 	-moz-border-radius: 3px; 
@@ -126,13 +123,15 @@ html, body {
 }*/
 
 
-/*.frame img{
+.frame img{
 	padding: 15px;
 	border: 1px solid #F2F2F2;
 	-moz-border-radius: 3px; 
-    -webkit-border-radius: 3px; 
-    border-radius: 3px;
-}*/
+  -webkit-border-radius: 3px; 
+  border-radius: 3px;
+
+  background-color: #FAFAFA;
+}
 
 .custom-textarea {
   width: 180px;
