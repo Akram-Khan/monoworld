@@ -18,12 +18,14 @@ Monoworld::Application.routes.draw do
   match "/privacy", :to => "home#privacy"
 
   resources :themes do
-    resources :photos
+    resources :photos do
+      resources :comments
+    end
   end
 
-  resources :photos do
-      resource :comments
-  end
+  #resources :photos do
+  #    resource :comments
+  #end
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

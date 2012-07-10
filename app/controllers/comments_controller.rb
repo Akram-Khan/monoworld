@@ -4,14 +4,17 @@ class CommentsController < ApplicationController
 
 	def create
 		@comment = @photo.comments.build(params[:comment])
-		@comment.save
-		redirect_to [@photo.theme,@photo]
+		if @comment.save
+			redirect_to [@photo.theme,@photo]
+		else
+			redirect_to :back
+		end
 	end
 
 	def destroy
 	end
 
-	private
+private
 
 	def find_photo
 		@photo = Photo.find(params[:photo_id])
