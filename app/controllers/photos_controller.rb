@@ -10,7 +10,7 @@ class PhotosController < ApplicationController
 		@photo = @theme.photos.build(params[:photo].merge!(:user => current_user))
 		if @photo.save
 			flash[:notice] = "Sucessfully uploaded photo"
-			redirect_to theme_path(@theme)
+			redirect_to [@theme,@photo]
 		else
 			flash[:notice] = "Could not upload photo"
 			render :new
