@@ -1,0 +1,6 @@
+.row
+	-if @photo.comments.exists?
+		-@photo.comments.each do |comment|
+			.row
+				=comment.user
+				=comment.comment
